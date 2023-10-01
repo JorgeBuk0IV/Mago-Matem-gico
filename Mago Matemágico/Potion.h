@@ -1,20 +1,19 @@
 #pragma once
-#include "Wizzard.h"
-class Potion
+#include "GameObject.h"
+class Potion : public GameObject
 {
-private:
-	Wizzard* wizzard;
 public:
-	Potion(Wizzard* wizzard) {
-		this->wizzard = wizzard;
+	Potion() {
+		width = 5;
+		height = 2;
+		x = rand() % (ANCHO - width);
+		y = rand() % (ALTO - height);
 	}
-	void UsePotion() {
-		int currentHp = wizzard->GetHp();
-		currentHp += 1;
-		wizzard->SetHp(currentHp);
-	}
+
 	void Show() {
-		Console::SetCursorPosition(x, y + 0); cout << " []";
+		Console::ForegroundColor = ConsoleColor::Red;
+		Console::SetCursorPosition(x, y + 0); cout << " [] ";
+		Console::ForegroundColor = ConsoleColor::Red;
 		Console::SetCursorPosition(x, y + 1); cout << "[__]";
 	}
 };

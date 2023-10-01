@@ -1,6 +1,7 @@
 #pragma once
 #include "MisLibrerias.h"
-#define ANCHO 120
+#include "BasicOperations.h"
+#define ANCHO 150
 #define ALTO 60
 
 class GameObject
@@ -13,7 +14,7 @@ protected:
 	int width, height;
 	bool itsAlive;
 public:
-	bool isThereCollision(){}
+	
 	
 	int GetX() {
 		return x;
@@ -45,5 +46,7 @@ public:
 			}
 		}
 	}
+
+	
 	
 };

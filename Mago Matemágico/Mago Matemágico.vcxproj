@@ -112,18 +112,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BasicOperations.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Gems.cpp" />
+    <ClCompile Include="GemsManager.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Potion.cpp" />
+    <ClCompile Include="PotionManager.cpp" />
     <ClCompile Include="Wizzard.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicOperations.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Gems.h" />
+    <ClInclude Include="GemsManager.h" />
     <ClInclude Include="MisLibrerias.h" />
     <ClInclude Include="Potion.h" />
+    <ClInclude Include="PotionManager.h" />
     <ClInclude Include="Wizzard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
